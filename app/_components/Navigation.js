@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { auth } from "../_lib/auth";
-import { SunIcon } from "@heroicons/react/24/solid";
+// import { SunIcon } from "@heroicons/react/24/solid";
 
 export default async function Navigation() {
   const session = await auth();
@@ -48,9 +48,9 @@ export default async function Navigation() {
             </Link>
           )}
         </li>
-        <li>
+        {/* <li>
           <SunIcon className="h-5 w-5 text-accent-500" />
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
