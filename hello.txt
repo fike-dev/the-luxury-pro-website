@@ -1,0 +1,52 @@
+curl ^"http://localhost:3000/account/reservations/edit/218^" ^
+  -H ^"Accept: text/x-component^" ^
+  -H ^"Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,ko;q=0.6^" ^
+  -H ^"Connection: keep-alive^" ^
+  -H ^"Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryOCXDDs0NuUEL7KdC^" ^
+  -b ^"Idea-96ea9475=eefb34fb-b767-4b21-9ac7-ab80c7a7fc4d; Pycharm-6b29dab5=adfedf7e-5510-4250-a44c-a56cf39f3c99; username-localhost-8888=^\^"2^|1:0^|10:1760243415^|23:username-localhost-8888^|192:eyJ1c2VybmFtZSI6ICJlNTBkNDM3MWE3YjU0NTVlYTAxZjg5MmU0MDc2NWI4MiIsICJuYW1lIjogIkFub255bW91cyBUaGViZSIsICJkaXNwbGF5X25hbWUiOiAiQW5vbnltb3VzIFRoZWJlIiwgImluaXRpYWxzIjogIkFUIiwgImNvbG9yIjogbnVsbH0=^|29c18a504688e862777d261c8b99f9724ad3fcefb97eaacd65cbddd02a5ae1f6^\^"; _xsrf=2^|07d249db^|5be64a2891bd86464d34c3b9649ac8c7^|1760243416; username-localhost-8889=^\^"2^|1:0^|10:1760245352^|23:username-localhost-8889^|200:eyJ1c2VybmFtZSI6ICIwM2MyYTFhNGVkN2I0N2RjYmFhMzM1YzExYTZhNTJlNCIsICJuYW1lIjogIkFub255bW91cyBBbWFsdGhlYSIsICJkaXNwbGF5X25hbWUiOiAiQW5vbnltb3VzIEFtYWx0aGVhIiwgImluaXRpYWxzIjogIkFBIiwgImNvbG9yIjogbnVsbH0=^|c7310971d6d7f623d7e45e31d27d6d6badec2f9c7d0ac1d16adae4a4d7202dda^\^"; authjs.csrf-token=6effbf35beb3e2fbaba38610df0c428c7f6fda50e9ad997d58e6d7f4a3f2937a^%^7C4f794d369192bddef582b9400897eabaaa0187b4a0d4af198537b072df07c957; authjs.callback-url=http^%^3A^%^2F^%^2Flocalhost^%^3A3000^%^2Faccount; authjs.session-token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwia2lkIjoiWEViVWpHVHdRS0l6UjZyenpXdTV2amVLREYwdndGejNPMk5nbGVKSVBmakRxQlJmZENWRlBSN2xHWUVMamVaR3dwVjVtZ2FDb2NoNUIxRHY1ek9uc2cifQ..ne8gXs741EmLMlw_wBDZOQ.IH14mdsyHxE9kR7ckfDY0zFM4MdpcdWpJULitFDR0bIL0Vxh-FUDg6PWN8yOazV3gNYFJpKANahRZHID3Jz-zdnzl3Dg4hK8XEVcN-VxQR6qPlUSM5JRg8dq8w64CpoHRfl-rQNO--Vv7qpQgRhBAhN3l92RdxAkQcdqwheG195I2Cgs21hoqbrvKX87vTUir4z6QHNqv1a37D3T0f7AgOkkILJ5k6AD-BGlqPx2s2t2HXmlGd8CoZeFWJUS5JSlHISFLQZfqvugp6dWXrfIqCSog-dV_TUyR4uek2EeC5r_DNvOP7d477u36VDFjpFTch5isjAxV_EHX2xGpDcx-g.1iLAchXKqMkN50vQqrtjFxPu2z6g61YMFTJ9ahZ-BFY^" ^
+  -H ^"Next-Action: d9d3c3ec11a1bf792c1eed0e17474f4da81f844a^" ^
+  -H ^"Next-Router-State-Tree: ^%^5B^%^22^%^22^%^2C^%^7B^%^22children^%^22^%^3A^%^5B^%^22account^%^22^%^2C^%^7B^%^22children^%^22^%^3A^%^5B^%^22reservations^%^22^%^2C^%^7B^%^22children^%^22^%^3A^%^5B^%^22edit^%^22^%^2C^%^7B^%^22children^%^22^%^3A^%^5B^%^5B^%^22bookingId^%^22^%^2C^%^22218^%^22^%^2C^%^22d^%^22^%^5D^%^2C^%^7B^%^22children^%^22^%^3A^%^5B^%^22__PAGE__^%^22^%^2C^%^7B^%^7D^%^2Cnull^%^2Cnull^%^5D^%^7D^%^2Cnull^%^2Cnull^%^5D^%^7D^%^2Cnull^%^2Cnull^%^5D^%^7D^%^2Cnull^%^2Cnull^%^5D^%^7D^%^2Cnull^%^2Cnull^%^5D^%^7D^%^2Cnull^%^2Cnull^%^2Ctrue^%^5D^" ^
+  -H ^"Origin: http://localhost:3000^" ^
+  -H ^"Referer: http://localhost:3000/account/reservations/edit/218^" ^
+  -H ^"Sec-Fetch-Dest: empty^" ^
+  -H ^"Sec-Fetch-Mode: cors^" ^
+  -H ^"Sec-Fetch-Site: same-origin^" ^
+  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"141^\^", ^\^"Not?A_Brand^\^";v=^\^"8^\^", ^\^"Chromium^\^";v=^\^"141^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  --data-raw ^"------WebKitFormBoundaryOCXDDs0NuUEL7KdC^
+
+Content-Disposition: form-data; name=^\^"1_reservationId^\^"^
+
+^
+
+218^
+
+------WebKitFormBoundaryOCXDDs0NuUEL7KdC^
+
+Content-Disposition: form-data; name=^\^"1_numGuests^\^"^
+
+^
+
+5^
+
+------WebKitFormBoundaryOCXDDs0NuUEL7KdC^
+
+Content-Disposition: form-data; name=^\^"1_observations^\^"^
+
+^
+
+There you g^
+
+------WebKitFormBoundaryOCXDDs0NuUEL7KdC^
+
+Content-Disposition: form-data; name=^\^"0^\^"^
+
+^
+
+^[^\^"^$K1^\^"^]^
+
+------WebKitFormBoundaryOCXDDs0NuUEL7KdC--^
+
+^"
