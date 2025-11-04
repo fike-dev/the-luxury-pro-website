@@ -29,6 +29,6 @@
 - Install dependecies `npm i`
 - Run locally `npm run dev`
 
-### This app is live on (The-Luxury-Pro-Website.com)[https://the-luxury-pro-website.vercel.app]
+### This app is live on [The-Luxury-Pro-Website.com](https://the-luxury-pro-website.vercel.app)
 
 ### Incase you got issues using this app, don't hesitate to reach me out via `fikadumom@gmail.com`
