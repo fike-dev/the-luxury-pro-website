@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Luxury Pro Customer Facing Website
 
-## Getting Started
+## Next.js application built using `npx create-next-app`
 
-First, run the development server:
+### Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- enables customers to signup and signin with Providers(Google and GitHub)
+- enables customers to see all the hotel's cabins and able to book a reservation
+- enables customers to update and delete their existing reservations
+- enables customers update their profile
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Technologies used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Next.js to create the app
+- nextAuth.js (recently Auth.js) for authenticating users
+- Supabase (as database) to store application data
+- Tailwind css for responsive styling
+- And a lot more other libraries
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Some improvements you may want to add
 
-## Learn More
+- Dark mode
+- Payment integration with Stripe
+- May be add a contact page where the customers contact the Hotel employees incase they face some issues.
 
-To learn more about Next.js, take a look at the following resources:
+### Want to run this app locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Clone the repositoy `git clone https://github.com/fike-dev/the-luxury-pro-website.git`
+- Install dependecies `npm i`
+- Run locally `npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### This app is live on (The-Luxury-Pro-Website.com)[https://the-luxury-pro-website.vercel.app]
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Incase you got issues using this app, don't hesitate to reach me out via `fikadumom@gmail.com`
