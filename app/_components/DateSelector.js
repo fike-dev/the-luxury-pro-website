@@ -67,17 +67,17 @@ function DateSelector({ cabin, settings, bookedDates }) {
                 </span>
               </>
             ) : (
-              <span className="text-2xl">${regularPrice}</span>
+              <span className="md:text-2xl text-xl">${regularPrice}</span>
             )}
             <span className="">/night</span>
           </p>
           {numNights ? (
             <>
-              <p className="bg-accent-600 px-3 py-2 text-2xl">
+              <p className="bg-accent-600 px-3 py-2 text-xl md:text-2xl flex flex-nowrap gap-1">
                 <span>&times;</span> <span>{numNights}</span>
               </p>
               <p>
-                <span className="text-[1rem] md:text-lg font-bold uppercase">
+                <span className=" text-sm md:text-lg font-bold uppercase">
                   Total
                 </span>{" "}
                 <span className="text-xl md:text-2xl font-semibold">

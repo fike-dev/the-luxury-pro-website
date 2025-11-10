@@ -6,7 +6,7 @@ function Cabin({ cabin }) {
   const { name, image, description, maxCapacity } = cabin;
   return (
     // <div className="md:grid grid-cols-[3fr_4fr] gap-20 border border-primary-800 py-3 px-10 mb-24 ">
-    <div className="flex flex-col justify-center gap-5 items-center md:grid grid-cols-[3fr_4fr] border-primary-800 py-3 px-10 mb-24">
+    <div className="flex flex-col justify-center gap-5 items-center md:grid grid-cols-[3fr_4fr] border-primary-800 py-3 px-4 md:px-10 mb-24">
       {/* <div className="relative scale-[1.15] -translate-x-1"> */}
       <div className="relative w-[300px] h-[400px] scale-[1.15] aspect-square -translate-x-1 ">
         <Image
@@ -18,7 +18,7 @@ function Cabin({ cabin }) {
       </div>
 
       <div>
-        <h3 className="text-accent-100 font-black text-4xl mb-5 bg-primary-950 p-6 pb-1 translate-y-[-430px] translate-x-[100px] md:w-[150%] md:translate-x-[-254px] md:translate-y-0 md:text-7xl">
+        <h3 className="text-accent-100 font-black text-4xl mb-5 bg-primary-950 p-6 pb-1 translate-y-[-430px] translate-x-[70px] md:translate-x-[100px] w-[95%] md:w-[150%] lg:translate-x-[-254px] md:translate-y-0 md:text-7xl">
           {/* <h3 className="text-accent-100 font-black text-7xl mb-5 translate-x-[-254px] bg-primary-950 p-6 pb-1 w-[150%]"> */}
           Cabin {name}
         </h3>
