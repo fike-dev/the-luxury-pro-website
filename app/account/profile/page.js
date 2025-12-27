@@ -10,8 +10,6 @@ export const metadata = {
 export default async function Page() {
   const session = await auth();
   const guest = await getGuest(session.user.email);
-  // CHANGE
-  const nationality = "portugal";
 
   return (
     <div>

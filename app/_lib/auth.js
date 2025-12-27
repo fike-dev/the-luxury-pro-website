@@ -25,7 +25,6 @@ export const {
       return !!auth?.user;
     },
     async signIn({ user, account, profile }) {
-      // console.log(account);
       try {
         const existingGuest = await getGuest(user.email);
 
@@ -37,9 +36,30 @@ export const {
         return false;
       }
     },
-    async session({ session, user }) {
-      const guest = await getGuest(session.user.email);
-      session.user.guestId = guest.id;
+    async jwt({ token, user }) {
+      // Runs ONLY at sign-in
+      // case 1. initial signin
+      if (user?.email) {
+        const guest = await getGuest(user.email);
+        if (guest) {
+          token.guestId = guest.id;
+        }
+      }
+      // Case 2: token already exists but guestId is missing
+      if (!token.guestId && token.email) {
+        const guest = await getGuest(token.email);
+        if (guest) {
+          token.guestId = guest.id;
+        }
+      }
+      return token;
+    },
+
+    async session({ session, token }) {
+      // Runs on EVERY request
+      if (session.user && token.guestId) {
+        session.user.guestId = token.guestId;
+      }
       return session;
     },
   },
