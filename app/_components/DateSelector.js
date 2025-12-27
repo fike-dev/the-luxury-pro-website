@@ -12,9 +12,9 @@ import { useReservationContext } from "./ReservationContext";
 
 function isAlreadyBooked(range, datesArr) {
   return (
-    range.from &&
-    range.to &&
-    datesArr.some((date) =>
+    range?.from &&
+    range?.to &&
+    datesArr?.some((date) =>
       isWithinInterval(date, { start: range.from, end: range.to })
     )
   );
@@ -29,7 +29,7 @@ function DateSelector({ cabin, settings, bookedDates }) {
   const { regularPrice, discount } = cabin;
 
   const numNights = Number(
-    differenceInDays(displayRange.to, displayRange.from)
+    differenceInDays(displayRange?.to, displayRange?.from)
   );
   const cabinPrice = (regularPrice - discount) * numNights;
   // console.log(bookedDates);

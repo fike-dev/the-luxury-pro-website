@@ -28,7 +28,8 @@ export async function updateGuest(formData) {
   if (!nationality) throw new Error("Please provide a valid nationality.");
 
   if (!/^[A-Za-z0-9]{6,12}$/.test(nationalID))
-    throw new Error("Please provide a vlaid nationalID.");
+    return revalidatePath("/account/profile");
+  // throw new Error("Please provide a valid nationalID.");
 
   const updateData = {
     nationality,
