@@ -17,8 +17,16 @@ function ReservationForm({ cabin, user }) {
 
   // CHANGE
   const bookingData = {
-    startDate,
-    endDate,
+    startDate: {
+      year: startDate?.getFullYear(),
+      month: startDate?.getMonth() + 1,
+      day: startDate?.getDate(),
+    },
+    endDate: {
+      year: endDate?.getFullYear(),
+      month: endDate?.getMonth() + 1,
+      day: endDate?.getDate(),
+    },
     numNights,
     cabinId,
     cabinPrice,

@@ -56,8 +56,13 @@ export async function createBooking(bookingData, formData) {
   // Object.entries(formData.entries())
 
   // We can use zod here for data validation but let's make it simple
+  const toDateUTC = (date) =>
+    new Date(Date.UTC(date.year, date.month - 1, date.day, 0, 0, 0));
+
   const newBooking = {
     ...bookingData,
+    startDate: toDateUTC(bookingData.startDate),
+    endDate: toDateUTC(bookingData.endDate),
     numGuests: +formData.get("numGuests"),
     observations: formData.get("observations").slice(0, 1000),
     guestId: session.user.guestId,
@@ -67,7 +72,6 @@ export async function createBooking(bookingData, formData) {
     hasBreakfast: false,
     status: "unconfirmed",
   };
-  // console.log(newBooking);
 
   const { error } = await supabase.from("bookings").insert([newBooking]);
 
